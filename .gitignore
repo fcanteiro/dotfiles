@@ -1,0 +1,6 @@
+# ignores all .log files
+*.log 
+
+# Laravel Herd Config symlink
+laravel_herd/config
+

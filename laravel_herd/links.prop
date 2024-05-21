@@ -1,0 +1,2 @@
+$DOTFILES/laravel_herd/dnsmasq.conf=$HOME/Library/Application Support/Herd/config/dnsmasq/dnsmasq.conf
+$HOME/Library/Application Support/Herd/config=$DOTFILES/laravel_herd/config
