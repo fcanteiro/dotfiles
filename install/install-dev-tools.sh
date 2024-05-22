@@ -11,6 +11,7 @@ declare -A apps=(
   ["1Password"]="--cask 1password:Password manager that keeps all passwords secure behind one password"
   ["python@3"]="python@3:Interpreted, interactive, object-oriented programming language"
   ["JetBrains Toolbox"]="--cask jetbrains-toolbox:JetBrains tools manager"
+  ["Visual Studio Code"]="brew install --cask visual-studio-code:Microsoft Visual Studio Code, VS Code"
   ["Sublime Text"]="--cask sublime-text:Text editor for code, markup and prose"
   ["TablePlus"]="--cask tableplus-toolbox:Native GUI tool for relational databases"
   ["GitHub Desktop"]="--cask github-text:Desktop client for GitHub repositories"
