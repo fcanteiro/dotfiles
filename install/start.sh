@@ -63,6 +63,7 @@ for line in "${lines[@]}"; do
     echo "$line" >>"$file"
   fi
 done
+source "$HOME/.zshrc"
 
 echo ''
 success 'All installed!'
