@@ -19,7 +19,8 @@ declare -A apps=(
   ["Tinkerwell"]="--cask tinkerwell:Tinker tool for PHP and Laravel developers"
   ["Postman"]="--cask postman:Collaboration platform for API development"
   ["Transmit"]="--cask transmit:File transfer application"
-  ["DeltaWalker"]="--cask deltawalker:Tool to compare and synchronise files and folders"
+  ["OpenVPN Connect"]="--cask openvpn-connect:Client program for the OpenVPN Access Server"
+  ["AnyDesk"]="--cask anydesk:Allows connection to a computer remotely"
 )
 
 echo ''
@@ -29,6 +30,7 @@ brew_install_apps "apps"
 echo ''
 info 'Extra Tools'
 declare -A extra_apps=(
+  ["DeltaWalker"]="--cask deltawalker:Tool to compare and synchronise files and folders"
   ["Insomnia"]="--cask insomnia:HTTP and GraphQL Client"
   ["ResponsivelyApp"]="--cask responsively:Modified browser that helps in responsive web development"
   ["Tempbox"]="--cask tempbox:Disposable email client"
