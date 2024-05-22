@@ -11,6 +11,7 @@ declare -A qol_apps=(
   ["Whatsapp"]="--cask whatsapp:Native desktop client for WhatsApp"
   ["Keyboard Maestro"]="--cask keyboard-maestro:Automation software"
   ["CleanShot"]="--cask cleanshot:Screen capturing tool"
+  ["Flycut"]="--cask flycut:Clipboard manager for developers"
   # ["xxx"]="--cask yyy:zzz"
 )
 
@@ -19,8 +20,6 @@ info 'Installing "Quality of Life" Apps'
 brew_install_apps "qol_apps"
 
 info 'App Store Apps'
-mas install 442160987
-success 'Flycut (Clipboard manager)'
 #mas install 458887729
 #success 'Translate Tab' # app store limitations try https://github.com/dbilgili/GoogleTranslate
 mas install 1233965871
