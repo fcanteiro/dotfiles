@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 source "$DOTFILES/install/functions.zsh"
 
-info 'Installing & Configuring Laravel Herd (Laravel and PHP development environment manager)'
+info 'Installing & Configuring Laravel Herd'
 brew install --cask herd --quiet
-sed -i '' 's/"tld": "test"/"tld": "xyz"/g' "$HOME/Library/Application Support/Herd/config/valet/config.json"
-sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/xyz'
-success 'set .xyz as a nameserver'
-success 'Laravel Herd'
+herd_configuration
+success 'Laravel Herd (Laravel and PHP development environment manager)'
 
 declare -A apps=(
   ["Google Chrome"]="--cask google-chrome:Web browser"
@@ -41,6 +39,7 @@ declare -A extra_apps=(
 )
 brew_install_apps "extra_apps"
 
+echo ''
 info 'App Store Apps'
 mas install 1354318707
 success 'Core Tunnel'

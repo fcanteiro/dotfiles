@@ -140,3 +140,24 @@ function brew_install_apps() {
     success "$app ($description)"
   done
 }
+
+herd_configuration() {
+  local CONFIG_FILE="$HOME/Library/Application Support/Herd/config/valet/config.json"
+  if [[ ! -f "$CONFIG_FILE" ]]; then
+    mkdir -p "$(dirname "$CONFIG_FILE")"
+    echo '{
+    "paths": [
+    ],
+    "loopback": "127.0.0.1",
+    "share-tool": "expose",
+    "tld": "xyz"
+}' >"$CONFIG_FILE"
+  else
+    sed -i '' 's/"tld": "test"/"tld": "xyz"/g' "$CONFIG_FILE"
+  fi
+  success 'Herd Configuration'
+
+  mkdir -p "/etc/resolver"
+  sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/xyz'
+  success 'set .xyz as a nameserver'
+}
