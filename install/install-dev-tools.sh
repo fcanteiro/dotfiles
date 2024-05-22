@@ -21,6 +21,8 @@ declare -A apps=(
   ["Transmit"]="--cask transmit:File transfer application"
   ["OpenVPN Connect"]="--cask openvpn-connect:Client program for the OpenVPN Access Server"
   ["AnyDesk"]="--cask anydesk:Allows connection to a computer remotely"
+  ["Another Redis Desktop Manager"]="--cask another-redis-desktop-manager:Redis desktop manager"
+  ["Medis"]="--cask medis:Modern GUI for Redis"
 )
 
 echo ''
