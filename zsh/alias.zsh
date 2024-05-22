@@ -1,5 +1,6 @@
 alias x="exit"
 alias h="cd ~"
+alias l="ls -al"
 alias sz="source ~/.zshrc"
 
 source $DOTFILES/zsh/alias_laravel.zsh
