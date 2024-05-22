@@ -2,7 +2,7 @@
 source "$DOTFILES/install/functions.zsh"
 
 info 'Installing & Configuring Laravel Herd (Laravel and PHP development environment manager)'
-# brew install --cask herd --quiet
+brew install --cask herd --quiet
 sed -i '' 's/"tld": "test"/"tld": "xyz"/g' "$HOME/Library/Application Support/Herd/config/valet/config.json"
 sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/xyz'
 success 'set .xyz as a nameserver'
