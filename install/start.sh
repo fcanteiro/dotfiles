@@ -32,6 +32,7 @@ create_env_file() {
     success "$HOME/.env.sh file already exists, skipping"
   else
     echo "export DOTFILES=$DOTFILES" >$HOME/.env.sh
+    echo "export COMPOSER_FUND=0" >$HOME/.env.sh
     success 'created ~/.env.sh'
   fi
 }
@@ -47,6 +48,12 @@ brew install bash
 echo ''
 info 'Installing Python'
 brew install python@3
+brew install anaconda
+export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+conda config --set auto_activate_base false
+
+info 'Installing Docker'
+brew install --cask docker
 
 echo ''
 brew install mas --quiet
