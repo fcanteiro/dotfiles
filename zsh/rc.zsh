@@ -9,6 +9,7 @@ source_if_exists $DOTFILES/zsh/history.zsh
 source_if_exists $DOTFILES/zsh/alias.zsh
 
 if test -z ${ZSH_HIGHLIGHT_DIR+x}; then
+  :
 else
   source $ZSH_HIGHLIGHT_DIR/zsh-syntax-highlighting.zsh
 fi
