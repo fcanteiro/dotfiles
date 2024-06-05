@@ -1,4 +1,4 @@
-alias hc="history -c"
+# alias hc="history -c"
 alias hg="history | grep "
 
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/history.zsh
