@@ -24,3 +24,5 @@ info 'App Store Apps'
 #success 'Translate Tab' # app store limitations try https://github.com/dbilgili/GoogleTranslate
 mas install 1233965871
 success 'ScreenBrush (Draw over the entire screen)'
+
+brew cleanup
