@@ -16,6 +16,7 @@ declare -A apps=(
   ["TablePlus"]="--cask tableplus-toolbox:Native GUI tool for relational databases"
   ["GitHub Desktop"]="--cask github-text:Desktop client for GitHub repositories"
   ["Tinkerwell"]="--cask tinkerwell:Tinker tool for PHP and Laravel developers"
+  ["Ray"]="--cask ray:Debug with Ray to fix problems faster"
   ["Postman"]="--cask postman:Collaboration platform for API development"
   ["Transmit"]="--cask transmit:File transfer application"
   ["OpenVPN Connect"]="--cask openvpn-connect:Client program for the OpenVPN Access Server"
@@ -44,3 +45,8 @@ echo ''
 info 'App Store Apps'
 mas install 1354318707
 success 'Core Tunnel'
+
+sz
+composer global require laravel/installer
+
+brew cleanup
