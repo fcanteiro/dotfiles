@@ -3,7 +3,8 @@
 cd "$(dirname "$0")/.."
 DOTFILES=$(pwd -P)
 
-set -e
+set -u # Exit if uninitialized variables are used
+set -e # Exit if uninitialized variables are used
 
 source "$DOTFILES/install/functions.zsh"
 
@@ -44,16 +45,16 @@ chmod u+x $DOTFILES/bin/pam_tid.py
 
 echo ''
 info 'Installing/Upgrading Bash'
-brew install bash
+brew install bash --quiet
 echo ''
 info 'Installing Python'
-brew install python@3
-brew install anaconda
+brew install python@3 --quiet
+brew install anaconda --quiet
 export PATH="/opt/homebrew/anaconda3/bin:$PATH"
 conda config --set auto_activate_base false
 
 info 'Installing Docker'
-brew install --cask docker
+brew install --cask docker --quiet
 
 echo ''
 brew install mas --quiet
