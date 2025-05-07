@@ -6,6 +6,10 @@ alias sz="source ~/.zshrc"
 source $DOTFILES/zsh/alias_laravel.zsh
 source $DOTFILES/zsh/alias_git.zsh
 
+# Apps
+alias tableplus="export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock; open -a /Applications/TablePlus.app"
+
+
 # System
 alias enable.touchid="sudo sed -i '' -e \"1s/^//p; 1s/^.*/auth       sufficient     pam_tid.so/\" /etc/pam.d/sudo"
 function sudo {

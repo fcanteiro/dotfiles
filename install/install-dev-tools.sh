@@ -11,10 +11,10 @@ declare -A apps=(
   ["1Password"]="--cask 1password:Password manager that keeps all passwords secure behind one password"
   ["python@3"]="python@3:Interpreted, interactive, object-oriented programming language"
   ["JetBrains Toolbox"]="--cask jetbrains-toolbox:JetBrains tools manager"
-  ["Visual Studio Code"]="brew install --cask visual-studio-code:Microsoft Visual Studio Code, VS Code"
+  ["Visual Studio Code"]="--cask visual-studio-code:Microsoft Visual Studio Code, VS Code"
   ["Sublime Text"]="--cask sublime-text:Text editor for code, markup and prose"
-  ["TablePlus"]="--cask tableplus-toolbox:Native GUI tool for relational databases"
-  ["GitHub Desktop"]="--cask github-text:Desktop client for GitHub repositories"
+  ["TablePlus"]="--cask tableplus:Native GUI tool for relational databases"
+  ["GitHub Desktop"]="--cask github:Desktop client for GitHub repositories"
   ["Tinkerwell"]="--cask tinkerwell:Tinker tool for PHP and Laravel developers"
   ["Ray"]="--cask ray:Debug with Ray to fix problems faster"
   ["Postman"]="--cask postman:Collaboration platform for API development"
@@ -33,10 +33,10 @@ echo ''
 info 'Extra Tools'
 declare -A extra_apps=(
   ["DeltaWalker"]="--cask deltawalker:Tool to compare and synchronise files and folders"
-  ["Insomnia"]="--cask insomnia:HTTP and GraphQL Client"
+  # ["Insomnia"]="--cask insomnia:HTTP and GraphQL Client"
   ["ResponsivelyApp"]="--cask responsively:Modified browser that helps in responsive web development"
-  ["Tempbox"]="--cask tempbox:Disposable email client"
-  ["Cyberduck"]="--cask cyberduck:Server and cloud storage browser"
+  # ["Tempbox"]="--cask tempbox:Disposable email client"
+  # ["Cyberduck"]="--cask cyberduck:Server and cloud storage browser"
   # ["xxx"]="--cask yyy:zzz"
 )
 brew_install_apps "extra_apps"

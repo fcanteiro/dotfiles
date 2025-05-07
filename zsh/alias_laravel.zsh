@@ -1,10 +1,8 @@
-# Local Server (Using Herd)
-alias php81="~/Library/Application\ Support/Herd/bin/php81"
-alias php82="~/Library/Application\ Support/Herd/bin/php82"
-alias php83="~/Library/Application\ Support/Herd/bin/php83"
-alias composer81="php81 ~/Library/Application\ Support/Herd/bin/composer"
-alias composer82="php82 ~/Library/Application\ Support/Herd/bin/composer"
-alias composer83="php83 ~/Library/Application\ Support/Herd/bin/composer"
+# Local Server
+alias php83="~/Library/PhpWebStudy/alias/php83"
+alias composer83="php83 composer"
+alias php84="~/Library/PhpWebStudy/alias/php84"
+alias composer84="php84 composer"
 
 # Laravel
 alias vapor="~/.composer/vendor/laravel/vapor-cli/vapor"
